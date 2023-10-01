@@ -9,7 +9,7 @@ import (
 	lrc "github.com/tlkamp/litter-api/v2/pkg/client"
 )
 
-func newLitterRobotCmd(c *lrc.Client) *cobra.Command {
+func newLitterRobotCmd(c *lrc.Client, version string) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "litterrobot",
 		Short: "Control your Litter Robot 3 Connect",
@@ -29,10 +29,14 @@ func newLitterRobotCmd(c *lrc.Client) *cobra.Command {
 		},
 	}
 
+	cmd.AddCommand(
+		newVersionCmd(version),
+	)
+
 	return cmd
 }
 
-func Execute() error {
+func Execute(v string) error {
 	var client *lrc.Client
-	return newLitterRobotCmd(client).Execute()
+	return newLitterRobotCmd(client, v).Execute()
 }

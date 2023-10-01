@@ -1,9 +1,18 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/tlkamp/litterrobot/internal/cmd"
 )
 
+var (
+	version = "dev"
+	commit  = "none"
+	date    = "unknown"
+)
+
 func main() {
-	cmd.Execute() //nolint:errcheck
+	versionString := fmt.Sprintf("%s - %s - %s", version, commit, date)
+	cmd.Execute(versionString) //nolint:errcheck
 }
