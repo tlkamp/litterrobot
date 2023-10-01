@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/tlkamp/litterrobot/compare/v1.0.0...v1.1.0) (2023-10-01)
+
+
+### Features
+
+* add version command ([29e39c7](https://github.com/tlkamp/litterrobot/commit/29e39c7ac590f0361207c42c2e1e3e237b300fe0))
+
 # 1.0.0 (2023-10-01)
 
 
