@@ -59,3 +59,12 @@ $ litterrobot config show --show-secrets
 email: email@example.com
 password: changeIt
 ```
+
+### Login
+Use the `login` command to authenticate to Litter Robot.
+
+This command writes the `token` to the config file. Keep it secret!
+
+```console
+$ litterobot login
+```

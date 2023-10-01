@@ -32,6 +32,7 @@ func newLitterRobotCmd(c *lrc.Client, version string) *cobra.Command {
 	cmd.AddCommand(
 		newVersionCmd(version),
 		newConfigCmd(),
+		newLoginCmd(c),
 	)
 
 	return cmd
