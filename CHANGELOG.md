@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/tlkamp/litterrobot/compare/v1.2.0...v1.3.0) (2023-10-01)
+
+
+### Features
+
+* add login command ([#4](https://github.com/tlkamp/litterrobot/issues/4)) ([15a541b](https://github.com/tlkamp/litterrobot/commit/15a541b7bbb2272fadeb5a7ec24cef3bcf020d64))
+
 # [1.2.0](https://github.com/tlkamp/litterrobot/compare/v1.1.0...v1.2.0) (2023-10-01)
 
 
