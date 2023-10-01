@@ -24,7 +24,7 @@ func newLitterRobotCmd(c *lrc.Client) *cobra.Command {
 			viper.SetConfigName("config")
 			viper.SetConfigType("yaml")
 			viper.AddConfigPath(configPath)
-			viper.ReadInConfig()
+			viper.ReadInConfig() //nolint:errcheck
 			return nil
 		},
 	}
